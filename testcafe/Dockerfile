@@ -1,4 +1,5 @@
-FROM anyonecantest/nodechrome:3.141.59-20201010
+ARG TAG=latest
+FROM anyonecantest/nodechrome:$TAG
 MAINTAINER hyunil.shin <hyunil.shin@nhn.com>
 
 USER root

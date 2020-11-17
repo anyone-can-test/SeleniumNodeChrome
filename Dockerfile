@@ -1,4 +1,5 @@
-FROM selenium/node-chrome:3.141.59-20201010
+ARG TAG=latest
+FROM selenium/node-chrome:$TAG
 # https://github.com/SeleniumHQ/docker-selenium
 MAINTAINER hyunil.shin <hyunil.shin@nhnent.com>
 
