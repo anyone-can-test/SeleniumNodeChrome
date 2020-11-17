@@ -33,4 +33,5 @@ jobs:
 
       - name: Push image
         run: |
-          all_build.sh
+          ls -al
+          ./all_build.sh
