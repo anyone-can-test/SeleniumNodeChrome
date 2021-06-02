@@ -6,7 +6,7 @@ USER root
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get -y install nodejs
-RUN apt-get install -y ffmpeg
+#RUN apt-get install -y ffmpeg
 
 # install yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
