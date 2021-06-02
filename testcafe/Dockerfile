@@ -5,6 +5,8 @@ MAINTAINER hyunil.shin <hyunil.shin@nhn.com>
 USER root
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+# ffmpeg
+RUN sudo add-apt-repository universe && sudo apt upgrade 
 RUN apt-get update && apt-get install -y nodejs ffmpeg
 
 # install yarn
