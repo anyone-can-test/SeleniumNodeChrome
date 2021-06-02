@@ -7,7 +7,7 @@ USER root
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 # ffmpeg
 RUN sudo apt-get update -y && sudo apt-get upgrade -y
-RUN sudo apt-get install -y software-properties-common && sudo add-apt-repository universe && sudo apt upgrade 
+#RUN sudo apt-get install -y software-properties-common && sudo add-apt-repository universe && sudo apt upgrade 
 RUN sudo apt-get install -y nodejs ffmpeg
 
 # install yarn
