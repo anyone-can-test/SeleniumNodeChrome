@@ -3,7 +3,7 @@
 set -e
 
 
-export TAG=3.141.59-20210422
+export TAG="3.141.59-20210804"
 echo "build $TAG"
 
 
