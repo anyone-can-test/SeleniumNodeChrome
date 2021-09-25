@@ -4,7 +4,7 @@ MAINTAINER hyunil.shin <hyunil.shin@nhn.com>
 
 USER root
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get -y install nodejs
 
 
