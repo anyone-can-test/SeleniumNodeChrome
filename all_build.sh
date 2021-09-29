@@ -3,7 +3,7 @@
 set -e
 
 
-export TAG="3.141.59-20210804-yarn2"
+export TAG="3.141.59-20210804"
 echo "build $TAG"
 
 
@@ -19,5 +19,5 @@ popd
 
 # prerequisite
 # docker login docker.io
-docker push anyonecantest/nodechrome:$TAG
-docker push anyonecantest/testcafe:$TAG
+docker push anyonecantest/nodechrome:${TAG}-yarn2
+docker push anyonecantest/testcafe:${TAG}-yarn2
