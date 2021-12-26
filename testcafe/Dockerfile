@@ -1,7 +1,7 @@
 ARG TAG=latest
-ARG NODE_VERSION=10
 FROM anyonecantest/nodechrome:$TAG
 MAINTAINER hyunil.shin <hyunil.shin@nhn.com>
+ARG NODE_VERSION=10
 
 USER root
 
