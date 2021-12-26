@@ -21,4 +21,4 @@ popd
 # prerequisite
 # docker login docker.io
 docker push anyonecantest/nodechrome:$TAG
-docker push anyonecantest/testcafe:$TAG-${NODE_VERSION}
+docker push anyonecantest/testcafe:$TAG-node${NODE_VERSION}
