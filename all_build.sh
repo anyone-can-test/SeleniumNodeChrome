@@ -11,6 +11,7 @@ echo "build $TAG"
 ./build_image_standalone.sh
 
 pushd testcafe
+export NODE_VERSION=12
 ./build_image.sh
 popd
 
@@ -20,4 +21,4 @@ popd
 # prerequisite
 # docker login docker.io
 docker push anyonecantest/nodechrome:$TAG
-docker push anyonecantest/testcafe:$TAG
+docker push anyonecantest/testcafe:$TAG-${NODE_VERSION}
