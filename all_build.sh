@@ -3,7 +3,7 @@
 set -e
 
 
-export TAG="4.5.0-20220929"
+export TAG="4.5.3-20221024"
 echo "build $TAG"
 
 
@@ -11,7 +11,7 @@ echo "build $TAG"
 ./build_image_standalone.sh
 
 pushd testcafe
-export NODE_VERSION=12
+export NODE_VERSION=14
 ./build_image.sh
 popd
 
