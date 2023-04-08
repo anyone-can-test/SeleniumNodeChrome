@@ -12,7 +12,7 @@ echo "build $TAG"
 ./build_image_standalone.sh
 
 pushd testcafe
-export NODE_VERSION=16
+export NODE_VERSION=14
 ./build_image.sh
 popd
 
