@@ -3,8 +3,8 @@
 set -e
 
 
-export TAG="4.8.3-20230328"
-# https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.8.3-20230328
+export TAG="4.8.3-20230404"
+# https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.8.3-20230404
 echo "build $TAG"
 
 
@@ -12,7 +12,7 @@ echo "build $TAG"
 ./build_image_standalone.sh
 
 pushd testcafe
-export NODE_VERSION=14
+export NODE_VERSION=18
 ./build_image.sh
 popd
 
