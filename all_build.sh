@@ -2,20 +2,17 @@
 
 set -e
 
-
-export TAG="4.17.0-20240123"
-# https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.17.0-20240123
+export TAG="4.16.1-20231219"
+# https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.16.1-20231219
 echo "build $TAG"
-
 
 ./build_image.sh
 ./build_image_standalone.sh
 
 pushd testcafe
-export NODE_VERSION=14
+export NODE_VERSION=16
 ./build_image.sh
 popd
-
 
 # push to registry
 
