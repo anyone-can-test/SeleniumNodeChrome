@@ -23,3 +23,5 @@ popd
 # docker login docker.io
 docker push anyonecantest/nodechrome:$TAG
 docker push anyonecantest/testcafe:$TAG-node${NODE_VERSION}
+
+docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'node --version'
