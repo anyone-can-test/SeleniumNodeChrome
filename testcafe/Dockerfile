@@ -10,6 +10,7 @@ USER root
 
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 RUN apt-get install -y nodejs
+RUN node --version
 
 #RUN apt-get update && sudo apt-get install -y ca-certificates curl gnupg
 #RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
