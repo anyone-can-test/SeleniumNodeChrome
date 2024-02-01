@@ -1,7 +1,6 @@
 ARG TAG=latest
 FROM anyonecantest/nodechrome:$TAG
 MAINTAINER hyunil.shin <hyunil.shin@nhn.com>
-ARG NODE_MAJOR=20
 
 USER root
 
@@ -9,8 +8,8 @@ USER root
 #RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash -
 #RUN apt-get -y install nodejs
 
-RUN curl -sL https://github.com/nodesource/distributions/blob/master/scripts/deb/setup_20.x  | bash -
-RUN apt-get update && apt-get install nodejs -y
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+RUN apt-get install -y nodejs
 
 #RUN apt-get update && sudo apt-get install -y ca-certificates curl gnupg
 #RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
