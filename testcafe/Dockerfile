@@ -8,8 +8,8 @@ USER root
 #RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash -
 #RUN apt-get -y install nodejs
 
-RUN curl -fsSL http://deb.nodesource.com/setup_20.x | sudo -E bash -
-RUN apt-get install -y nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+RUN apt-get update && apt-get install nodejs -y
 RUN node --version
 
 #RUN apt-get update && sudo apt-get install -y ca-certificates curl gnupg
