@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker run anyonecantest/testcafe:4.8.3-20230328-node20 'node --version'
+      run: docker run -u root anyonecantest/testcafe:4.8.3-20230328-node20 'which node'
