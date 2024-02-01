@@ -24,4 +24,5 @@ popd
 docker push anyonecantest/nodechrome:$TAG
 docker push anyonecantest/testcafe:$TAG-node${NODE_VERSION}
 
-docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'node --version'
+docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'ls -al /usr/bin'
+docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} '/usr/bin/node --version'
