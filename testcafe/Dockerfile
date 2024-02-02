@@ -17,12 +17,12 @@ RUN node --version
 #RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 #RUN apt-get update -y && apt-get install -y  yarn
 
+
+###
+USER seluser
+
 # from https://github.com/apache/trafficcontrol/issues/6289
 ENV SE_EVENT_BUS_HOST=localhost
 ENV SE_EVENT_BUS_PUBLISH_PORT=4442
 ENV SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 ENV SE_NODE_GRID_URL=http://localhost:4444'
-
-
-###
-USER seluser
