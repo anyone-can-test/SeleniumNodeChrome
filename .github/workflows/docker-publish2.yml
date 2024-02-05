@@ -31,7 +31,7 @@ jobs:
       - name: Log into registry
         run: echo "${{ secrets.DOCKER_LOGIN_KEY }}" | docker login docker.io -u anyonecantest --password-stdin
 
-      - name: Push image
+      - name: Build and push image
         run: |
           ls -al
           ./all_build.sh
