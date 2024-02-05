@@ -35,6 +35,8 @@ ENV TZ=Asia/Seoul
 RUN echo "Asia/Seoul" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 RUN date
 
+# testcafe 실행에 필요한 도구
+RUN apt-get install -y git unzip
 
 ###
 USER seluser
