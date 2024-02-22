@@ -5,9 +5,7 @@ MAINTAINER hyunil.shin <hyunil.shin@nhnent.com>
 
 USER root
 
-RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
-  &&sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
-  &&echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
+RUN echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
   && echo "deb http://ftp.daumkakao.com/ubuntu xenial-updates main universe\n" >> /etc/apt/sources.list \
   && echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe\n" >> /etc/apt/sources.list
 
