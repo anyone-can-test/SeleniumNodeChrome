@@ -5,13 +5,15 @@ MAINTAINER hyunil.shin <hyunil.shin@nhnent.com>
 
 USER root
 
-RUN  echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
+RUN echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
   && echo "deb http://ftp.daumkakao.com/ubuntu xenial-updates main universe\n" >> /etc/apt/sources.list \
   && echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe\n" >> /etc/apt/sources.list
 
 
 #=========================================== 
 # set locale ko_KR
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 RUN apt-get update
 RUN apt-get install -y language-pack-gnome-ko language-pack-gnome-en
 RUN locale-gen ko_KR.UTF-8
