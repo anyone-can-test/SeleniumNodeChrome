@@ -23,4 +23,4 @@ docker push anyonecantest/nodechrome:$TAG
 docker push anyonecantest/testcafe:$TAG-node${NODE_VERSION}
 
 # check
-docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'node --version'
+#docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'node --version'

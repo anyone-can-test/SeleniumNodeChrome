@@ -35,3 +35,5 @@ jobs:
         run: |
           ls -al
           ./all_build.sh
+      - name: Test
+        run: docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'node --version'
