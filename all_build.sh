@@ -3,10 +3,9 @@
 set -e
 
 
-export TAG="4.8.3-20230328"
-# https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.17.0-20240123
+export TAG="4.18.0-20240220"
+# https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.18.0-20240220
 echo "build $TAG"
-
 
 ./build_image.sh
 ./build_image_standalone.sh
@@ -16,7 +15,6 @@ export NODE_VERSION=20
 ./build_image.sh
 popd
 
-
 # push to registry
 
 # prerequisite
@@ -25,4 +23,4 @@ docker push anyonecantest/nodechrome:$TAG
 docker push anyonecantest/testcafe:$TAG-node${NODE_VERSION}
 
 # check
-#docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'node --version'
+docker run anyonecantest/testcafe:$TAG-node${NODE_VERSION} 'node --version'
