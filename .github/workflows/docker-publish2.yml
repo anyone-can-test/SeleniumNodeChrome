@@ -20,7 +20,7 @@ env:
 jobs:  
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
-  push:    
+  build images:
 
     runs-on: ubuntu-latest
     #if: github.event_name == 'push'
@@ -36,4 +36,4 @@ jobs:
           ls -al
           ./all_build.sh
       - name: Test
-        run: docker run anyonecantest/testcafe:4.18.0-20240220-node20 'node --version'
+        run: docker run anyonecantest/testcafe:4.18.0-20240220-node20 node -v
