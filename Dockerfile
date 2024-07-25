@@ -5,9 +5,9 @@ MAINTAINER hyunil.shin <hyunil.shin@nhnent.com>
 
 USER root
 
-RUN echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
-  && echo "deb http://ftp.daumkakao.com/ubuntu xenial-updates main universe\n" >> /etc/apt/sources.list \
-  && echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe\n" >> /etc/apt/sources.list
+#RUN echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
+#  && echo "deb http://ftp.daumkakao.com/ubuntu xenial-updates main universe\n" >> /etc/apt/sources.list \
+#  && echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe\n" >> /etc/apt/sources.list
 
 
 #=========================================== 

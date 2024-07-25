@@ -5,9 +5,9 @@ MAINTAINER hyunil.shin <hyunil.shin@nhnent.com>
 
 USER root
 
-RUN  echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
-  && echo "deb http://ftp.daumkakao.com/ubuntu xenial-updates main universe\n" >> /etc/apt/sources.list \
-  && echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe\n" >> /etc/apt/sources.list
+#RUN  echo "deb http://ftp.daumkakao.com/ubuntu xenial main universe\n" > /etc/apt/sources.list \
+#  && echo "deb http://ftp.daumkakao.com/ubuntu xenial-updates main universe\n" >> /etc/apt/sources.list \
+#  && echo "deb http://security.ubuntu.com/ubuntu xenial-security main universe\n" >> /etc/apt/sources.list
 
 
 #=========================================== 
@@ -37,6 +37,8 @@ ENV TZ=Asia/Seoul
 RUN echo "Asia/Seoul" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 RUN date
 
+# testcafe 실행에 필요한 도구
+RUN apt-get install -y git
 
 ###
 USER seluser

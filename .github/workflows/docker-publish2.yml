@@ -20,7 +20,7 @@ env:
 jobs:  
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
-  push:    
+  build_images:
 
     runs-on: ubuntu-latest
     #if: github.event_name == 'push'
@@ -31,7 +31,9 @@ jobs:
       - name: Log into registry
         run: echo "${{ secrets.DOCKER_LOGIN_KEY }}" | docker login docker.io -u anyonecantest --password-stdin
 
-      - name: Push image
+      - name: Build and push image
         run: |
           ls -al
           ./all_build.sh
+      - name: Test
+        run: docker run anyonecantest/testcafe:4.22.0-20240621-node20 node -v
