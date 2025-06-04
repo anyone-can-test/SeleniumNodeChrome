@@ -38,4 +38,4 @@ jobs:
       - name: Test
         run: |
           echo "Testing: testcafe:${TAG}-${NODE_VERSION}"
-          docker run anyonecantest/testcafe:${TAG}-node${NODE_VERSION} node -v
+          docker run anyonecantest/testcafe:${TAG}-node${NODE_VERSION} "node -v"
