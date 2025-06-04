@@ -36,4 +36,4 @@ jobs:
           ls -al
           ./all_build.sh
       - name: Test
-        run: docker run anyonecantest/testcafe:4.22.0-20240621-node20 node -v
+        run: docker run anyonecantest/testcafe:134.0-20250525-node20 node -v
