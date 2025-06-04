@@ -34,8 +34,8 @@ jobs:
         run: |
           ls -al
           ./all_build.sh
-  test_image:
-    runs-on: ubuntu-latest
-    steps:
+          
       - name: Test
-        run: docker run anyonecantest/testcafe:${TAG}-${NODE_VERSION} node -v
+        run: |
+          echo "Testing: testcafe:${TAG}-${NODE_VERSION}"
+          docker run anyonecantest/testcafe:${TAG}-${NODE_VERSION} node -v
