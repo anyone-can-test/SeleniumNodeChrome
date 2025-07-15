@@ -3,7 +3,7 @@
 set -e
 
 
-export TAG="134.0-20250525"
+export TAG="134.0-20250524"
 # https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.18.0-20240220
 echo "build $TAG"
 echo "TAG=${TAG}" >> $GITHUB_ENV
