@@ -1,4 +1,4 @@
-ARG TAG=4.20.0-20240505
+ARG TAG=latest
 FROM selenium/node-chrome:$TAG
 # https://github.com/SeleniumHQ/docker-selenium
 MAINTAINER hyunil.shin <hyunil.shin@nhnent.com>
