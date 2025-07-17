@@ -2,7 +2,8 @@
 
 set -e
 
-
+export TAG="134.0-20250525"
+# https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.18.0-20240220
 export TAG="124.0-20250707"
 # https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.20.0-20240505
 echo "build $TAG"
