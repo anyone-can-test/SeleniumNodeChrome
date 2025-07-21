@@ -2,7 +2,7 @@
 
 set -e
 
-export TAG="134.0-20250525"
+export TAG="138.0-20250717"
 # https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.33.0-20250525
 # export TAG="124.0-20250707" --> 124버전 크롬
 # https://github.com/SeleniumHQ/docker-selenium/releases/tag/4.20.0-20240505
